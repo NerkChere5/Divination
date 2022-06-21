@@ -1,0 +1,34 @@
+:host {
+  box-sizing: border-box;
+  display: contents;
+  height: 100%;
+  width: 100%;
+}
+
+
+.popup {
+  all: inherit;
+  
+  background: #0009;
+  display: grid;
+  height: 100vh;
+  justify-items: center;
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+}
+
+.popup[visible='false'] {
+  display: none;
+}
+
+.popup_button {
+  height: 50px;
+  width: 100px;
+}
+
+.content {
+  display: block;
+  overflow: auto;
+  padding: 25px;
+}
